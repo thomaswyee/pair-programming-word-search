@@ -54,12 +54,42 @@ describe("#wordSearch()", function() {
   it("should return true if the word is present", function() {
     const result = wordSearch([
       ['H', 'W', 'C', 'F', 'P', 'L', 'E', 'H'],
+      ['S', 'A', 'I', 'N', 'F', 'E', 'L', 'D'],
+      ['Y', 'F', 'L', 'F', 'Q', 'U', 'A', 'L'],
+      ['H', 'M', 'J', 'P', 'E', 'V', 'R', 'G'],
+      ['W', 'H', 'C', 'S', 'L', 'E', 'R', 'L'],
+      ['B', 'F', 'R', 'E', 'N', 'E', 'Y', 'B'],
+      ['U', 'B', 'T', 'W', 'A', 'P', 'H', 'I'],
+      ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
+      ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
+    ], 'HELP');
+
+    assert.isTrue(result);
+  });
+  it("should return true if the word is present", function() {
+    const result = wordSearch([
+      ['H', 'W', 'C', 'F', 'P', 'L', 'E', 'H'],
       ['S', 'E', 'I', 'N', 'F', 'E', 'L', 'D'],
       ['Y', 'F', 'L', 'F', 'Q', 'U', 'A', 'L'],
       ['H', 'M', 'J', 'P', 'E', 'V', 'R', 'G'],
       ['W', 'H', 'C', 'S', 'Y', 'E', 'R', 'L'],
       ['B', 'F', 'R', 'E', 'N', 'E', 'Y', 'B'],
-      ['U', 'B', 'T', 'W', 'A', 'P', 'A', 'I'],
+      ['U', 'B', 'T', 'W', 'A', 'P', 'H', 'I'],
+      ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
+      ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
+    ], 'HELP');
+
+    assert.isTrue(result);
+  });
+  it("should return true if the word is present", function() {
+    const result = wordSearch([
+      ['H', 'W', 'C', 'F', 'P', 'L', 'E', 'H'],
+      ['S', 'A', 'I', 'N', 'P', 'E', 'L', 'D'],
+      ['Y', 'F', 'L', 'L', 'Q', 'U', 'A', 'L'],
+      ['H', 'M', 'E', 'P', 'E', 'V', 'R', 'G'],
+      ['W', 'H', 'C', 'S', 'Y', 'E', 'R', 'L'],
+      ['B', 'F', 'R', 'E', 'N', 'E', 'Y', 'B'],
+      ['U', 'B', 'T', 'W', 'A', 'P', 'H', 'I'],
       ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
       ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
     ], 'HELP');
