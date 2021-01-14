@@ -24,7 +24,7 @@ const wordSearch = (letters, word) => {
       return true;
     }
   }
-  if (diag(letters, word)) {
+  if (diag(letters, word, wordReverse)) {
     return true;
   }
   return false;
